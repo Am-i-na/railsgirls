@@ -23,7 +23,8 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class=<%="#{@current_page == 'Ideas' ? 'active' : '' }"%> ><a href="/ideas">Ideas</a></li>
+            <li class=<%="#{@current_page == 'Ideas' ? 'active' : '' }"%>><a href="/ideas">Ideas</a></li>
+            <li class=<%="#{@current_page == 'New Idea' ? 'active' : '' }"%>><%= link_to 'New Idea', new_idea_path %></li>
             <li class=<%="#{@current_page == 'Info' ? 'active' : '' }"%>><a href="/pages/info">Info</a></li>
             <p class="navbar-text pull-right">
               <% if user_signed_in? %>

@@ -15,6 +15,7 @@ class IdeasController < ApplicationController
 
   # GET /ideas/new
   def new
+    @current_page = "New Idea"
     @idea = Idea.new
   end
 
